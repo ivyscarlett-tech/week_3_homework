@@ -1,0 +1,162 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  font-family: "Poppins", sans-serif; /* Added for consistency */
+}
+
+/* Styles for index.html */
+.container {
+  max-width: 1200px;
+}
+
+h1,
+.about-h1 {
+  /* Targeting both homepage H1 and about page H1 */
+  font-size: 96px;
+  text-align: center;
+  margin: 0;
+}
+
+h2,
+.contact-h2 {
+  /* Targeting both homepage H2 and about page H2 */
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  text-align: center;
+  margin: 0;
+}
+
+/* Keeps homepage paragraphs left-aligned */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.mb-3 {
+  text-align: left;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 0 10px; /* This gives 10px of space on the left and right of each button */
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  flex-shrink: 0; /* Prevents the buttons from shrinking */
+}
+
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.primary-link {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: var(--box-shadow);
+}
+
+.primary-link:hover,
+.contact-link:hover,
+.about-link:hover {
+  color: rgb(4, 15, 179);
+  transition: color 150ms ease-in-out;
+}
+
+.about-section {
+  padding-top: 120px; /* Increased from 60px to push the title down */
+  padding-bottom: 20px; /* Reduced to save vertical space */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+/* New class for the paragraph on the about page */
+.about-paragraph {
+  font-size: 16px;
+  text-align: center;
+  background: none; /* remove background from user's p style */
+  padding: 0; /* remove padding from user's p style */
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  padding-bottom: 10px; /* Reduced from 50px */
+}
+
+/* Add these updated styles to your style.css file */
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Style for non-active navigation links (About me, Contact me) */
+.nav-link {
+  color: #6c757d; /* A shade of grey */
+  margin-right: 15px; /* Adds a little space between links */
+}
+
+/* Style for the active navigation link (Home) */
+.nav-link.active {
+  color: black !important; /* Set text color to black */
+  font-weight: normal !important; /* Ensure text is not bold */
+}
+
+/* Optional: Change link color on hover */
+.nav-link:hover {
+  color: rgb(78, 78, 78);
+}
+
+.hero {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
